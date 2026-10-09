@@ -20,6 +20,8 @@ ReaderView = {
 			doc.head.insertBefore(base, doc.head.firstChild);
 		}
 
+		this.prepare(doc);
+
 		let article;
 		try {
 			article = new Readability(doc, { keepClasses: false }).parse();
@@ -66,6 +68,17 @@ ${article.content}
 </html>
 `;
 		return { title, html: out };
+	},
+
+	// Pages saved while a sign-in or subscribe pop-up was open (Substack, for
+	// one) mark their real content aria-hidden="true", which Readability
+	// treats as invisible and then extracts only the subtitle. The attribute
+	// only concerns assistive technology and never hides anything visually,
+	// so dropping it is safe.
+	prepare(doc) {
+		for (let el of doc.querySelectorAll('[aria-hidden="true"]')) {
+			el.removeAttribute('aria-hidden');
+		}
 	},
 
 	formatDate(value) {
