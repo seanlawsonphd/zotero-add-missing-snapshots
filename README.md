@@ -18,7 +18,8 @@ snapshot the Connector would have made.
 2. In Zotero, open **Tools → Plugins**, click the gear icon, choose
    **Install Plugin From File…**, and pick the `.xpi`.
 
-Requires Zotero 7 or later. Updates arrive through Zotero's plugin updater.
+Requires Zotero 7 or later (declared compatible through Zotero 10.x; compatibility is
+extended via the update manifest). Updates arrive through Zotero's plugin updater.
 
 ## Use
 

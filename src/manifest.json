@@ -9,7 +9,8 @@
 		"zotero": {
 			"id": "add-missing-snapshots@seanlawsonphd",
 			"update_url": "https://raw.githubusercontent.com/seanlawsonphd/zotero-add-missing-snapshots/main/updates.json",
-			"strict_min_version": "7.0"
+			"strict_min_version": "7.0",
+			"strict_max_version": "10.*"
 		}
 	}
 }
