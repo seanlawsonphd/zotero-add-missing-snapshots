@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
 	"name": "Add Missing Snapshots",
-	"version": "1.0.0",
-	"description": "Adds a page snapshot to selected items that have a URL but no snapshot, for example items saved several at a time from the Zotero Connector.",
+	"version": "1.1.0",
+	"description": "Adds missing page snapshots to selected items and creates clean reader-view copies of snapshots, from the item context menu.",
 	"author": "Sean Lawson",
 	"homepage_url": "https://github.com/seanlawsonphd/zotero-add-missing-snapshots",
 	"applications": {
