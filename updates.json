@@ -1,0 +1,18 @@
+{
+	"addons": {
+		"add-missing-snapshots@seanlawsonphd": {
+			"updates": [
+				{
+					"version": "1.0.0",
+					"update_link": "https://github.com/seanlawsonphd/zotero-add-missing-snapshots/releases/download/v1.0.0/add-missing-snapshots-1.0.0.xpi",
+					"update_hash": "sha256:602ee0f120eda7a0826d1d7a2b3ccff9a35486f0e54da4d1dda096ba3ebb1e40",
+					"applications": {
+						"zotero": {
+							"strict_min_version": "7.0"
+						}
+					}
+				}
+			]
+		}
+	}
+}
